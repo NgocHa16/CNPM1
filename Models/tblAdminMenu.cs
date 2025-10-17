@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Threading.Tasks;  
 
 namespace aznews.Models
 {
@@ -14,7 +14,7 @@ namespace aznews.Models
         public long AdminMenuID { get; set; }
         public string? ItemName { get; set; }
         public int ItemLevel { get; set; }
-        public int ParentLevel { get; set; }
+        public int? ParentLevel { get; set; }
         public int ItemOrder { get; set; }
         public bool IsActive { get; set; }
         public string? ItemTarget { get; set; }

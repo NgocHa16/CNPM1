@@ -1,0 +1,93 @@
+@model IEnumerable<aznews.Areas.Admin.Models.KhoaVien>
+
+<section class="section">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold text-primary mb-0 text-uppercase">Quản lý khoa viện</h4>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-success"><i class="bi bi-download me-1"></i>Import</a>
+                            <a href="#" class="btn btn-outline-success"><i class="bi bi-file-earmark-excel me-1"></i>Xuất Excel</a>
+                            <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-lg me-1"></i>Thêm mới</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div class="input-group w-auto">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm tên khoa viện...">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover align-middle text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th style="width: 5%;">STT</th>
+                                    <th style="width: 20%;">Tên khoa viện</th>
+                                    <th style="width: 25%;">Địa chỉ</th>
+                                    <th style="width: 15%;">Điện thoại</th>
+                                    <th style="width: 20%;">Email</th>
+                                    <th style="width: 15%;">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int stt = 1;
+                                }
+                                @foreach (var kv in Model)
+                                {
+                                    <tr>
+                                        <td>@stt</td>
+                                        <td class="text-start">@kv.TenKhoaVien</td>
+                                        <td class="text-start">@kv.DiaChi</td>
+                                        <td>@kv.DienThoai</td>
+                                        <td>@kv.Email</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center gap-2">
+                                                <a asp-action="Edit" asp-route-id="@kv.MaKhoaVien" class="btn btn-sm btn-outline-primary" title="Sửa">
+                                                    <i class="bi bi-pencil-square"></i>
+                                                </a>
+                                                <a asp-action="Details" asp-route-id="@kv.MaKhoaVien" class="btn btn-sm btn-outline-info" title="Chi tiết">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                                <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal-@kv.MaKhoaVien">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+
+                                                <!-- Modal Xác nhận xóa -->
+                                                <div class="modal fade" id="deleteModal-@kv.MaKhoaVien" tabindex="-1" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Xác nhận xóa</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Bạn có chắc chắn muốn xóa <b>@kv.TenKhoaVien</b> không?
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                                                <a asp-action="Delete" asp-route-id="@kv.MaKhoaVien" class="btn btn-danger">Xóa</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    stt++;
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

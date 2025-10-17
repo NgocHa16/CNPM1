@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MxuQKFZHqIU=",
+  "dgSpecHash": "YDUfEVdnUsQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\CHUONGTRINH\\aznews\\aznews.csproj",
+  "projectFilePath": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\aznews\\aznews.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

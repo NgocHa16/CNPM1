@@ -7446,11 +7446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\CHUONGTRINH\\aznews\\aznews.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\aznews\\aznews.csproj",
       "projectName": "aznews",
-      "projectPath": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\CHUONGTRINH\\aznews\\aznews.csproj",
+      "projectPath": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\aznews\\aznews.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\CHUONGTRINH\\aznews\\obj\\",
+      "outputPath": "C:\\Users\\asus\\Documents\\ĐẠI HỌC\\NĂM 4\\HỌC KỲ 1\\CÔNG NGHỆ PHẦN MỀM\\ĐỒ ÁN\\CHUONGTRINH\\aznews\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

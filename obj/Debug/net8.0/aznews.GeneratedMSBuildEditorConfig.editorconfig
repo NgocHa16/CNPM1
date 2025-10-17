@@ -17,71 +17,79 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = aznews
 build_property.RootNamespace = aznews
-build_property.ProjectDir = C:\Users\asus\Documents\ĐẠI HỌC\NĂM 4\HỌC KỲ 1\CÔNG NGHỆ PHẦN MỀM\ĐỒ ÁN\CHUONGTRINH\CHUONGTRINH\aznews\
+build_property.ProjectDir = C:\Users\asus\Documents\ĐẠI HỌC\NĂM 4\HỌC KỲ 1\CÔNG NGHỆ PHẦN MỀM\ĐỒ ÁN\CHUONGTRINH\aznews\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\asus\Documents\ĐẠI HỌC\NĂM 4\HỌC KỲ 1\CÔNG NGHỆ PHẦN MỀM\ĐỒ ÁN\CHUONGTRINH\CHUONGTRINH\aznews
+build_property.MSBuildProjectDirectory = C:\Users\asus\Documents\ĐẠI HỌC\NĂM 4\HỌC KỲ 1\CÔNG NGHỆ PHẦN MỀM\ĐỒ ÁN\CHUONGTRINH\aznews
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/Shared/Components/AdminMenu/Default.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/KhoaVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hvYVZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/KhoaVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hvYVZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/Shared/Components/AdminMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5NZW51XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/ThongBao/Create.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/ThongBao/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGhvbmdCYW9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/ThongBao/Index.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/ThongBao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGhvbmdCYW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/Home/Index.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/Home/Privacy.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/Shared/Components/MenuView/Default.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/Shared/Components/MenuView/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVZpZXdcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/Shared/Error.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/_ViewImports.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/_ViewStart.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/CHUONGTRINH/aznews/Views/Shared/_Layout.cshtml]
+[C:/Users/asus/Documents/ĐẠI HỌC/NĂM 4/HỌC KỲ 1/CÔNG NGHỆ PHẦN MỀM/ĐỒ ÁN/CHUONGTRINH/aznews/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zhlwni5x7f
