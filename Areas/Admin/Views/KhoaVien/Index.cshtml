@@ -10,18 +10,23 @@
                         <div class="d-flex gap-2">
                             <a href="#" class="btn btn-success"><i class="bi bi-download me-1"></i>Import</a>
                             <a href="#" class="btn btn-outline-success"><i class="bi bi-file-earmark-excel me-1"></i>Xuất Excel</a>
-                            <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-lg me-1"></i>Thêm mới</a>
+                            <a asp-area="Admin" asp-controller="KhoaVien" asp-action="Create" class="btn btn-primary">
+                                <i class="bi bi-plus-lg me-1"></i>Thêm mới
+                            </a>
+
                         </div>
                     </div>
 
                     <div class="d-flex flex-wrap gap-2 mb-3">
-                        <div class="input-group w-auto">
-                            <input type="text" class="form-control" placeholder="Tìm kiếm tên khoa viện...">
-                            <button class="btn btn-outline-secondary" type="button">
+                        <form asp-area="Admin" asp-controller="KhoaVien" asp-action="Index" method="get" id="searchForm" class="input-group w-auto">
+                            <input type="text" id="searchInput" name="searchString" value="@ViewData["SearchString"]"
+                                class="form-control" placeholder="Tìm kiếm tên khoa viện...">
+                            <button class="btn btn-outline-secondary" type="submit">
                                 <i class="bi bi-search"></i>
                             </button>
-                        </div>
+                        </form>
                     </div>
+
 
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover align-middle text-center">
@@ -72,11 +77,17 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                                                                <a asp-action="Delete" asp-route-id="@kv.MaKhoaVien" class="btn btn-danger">Xóa</a>
+
+                                                                <form asp-area="Admin" asp-controller="KhoaVien" asp-action="Delete" method="post" class="d-inline">
+                                                                    @Html.AntiForgeryToken()
+                                                                    <input type="hidden" name="id" value="@kv.MaKhoaVien" />
+                                                                    <button type="submit" class="btn btn-danger">Xóa</button>
+                                                                </form>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </td>
                                     </tr>
@@ -91,3 +102,17 @@
         </div>
     </div>
 </section>
+@section Scripts {
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const searchForm = document.getElementById("searchForm");
+        let typingTimer;
+
+        searchInput.addEventListener("keyup", function () {
+            clearTimeout(typingTimer);
+            typingTimer = setTimeout(() => {
+                searchForm.submit(); // tự động gửi form sau 400ms ngừng gõ
+            }, 400);
+        });
+    </script>
+}

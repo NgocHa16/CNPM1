@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace aznews.Areas.Admin.Models
+{
+    [Table("VaiTro")]
+    public class VaiTro
+    {
+        [Key]
+        public int MaVaiTro { get; set; }
+        public string TenVaiTro { get; set; }
+    }
+}

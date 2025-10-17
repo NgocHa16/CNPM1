@@ -1,13 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using aznews.Areas.Admin.Models;
 using aznews.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore; // ⚡ thêm dòng này để dùng AnyAsync, ToListAsync...
+using Microsoft.EntityFrameworkCore;
 
 namespace aznews.Areas.Admin.Controllers
 {
@@ -21,39 +18,85 @@ namespace aznews.Areas.Admin.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        // 🟢 Index - Có tìm kiếm
+        public async Task<IActionResult> Index(string? searchString)
         {
-            var tblist = _context.KhoaViens.OrderBy(m => m.MaKhoaVien).ToList();
-            return View(tblist);
+            var query = _context.KhoaViens.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                searchString = searchString.Trim().ToLower();
+                query = query.Where(k =>
+                    (k.TenKhoaVien != null && k.TenKhoaVien.ToLower().Contains(searchString)) ||
+                    (k.Email != null && k.Email.ToLower().Contains(searchString)) ||
+                    (k.DiaChi != null && k.DiaChi.ToLower().Contains(searchString)));
+            }
+
+            var list = await query.OrderBy(k => k.MaKhoaVien).ToListAsync();
+            ViewData["SearchString"] = searchString;
+            return View(list);
         }
 
-        // POST: Admin/KhoaVien/Create
+
+
+        [HttpGet]
+        public IActionResult Create() => View();
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(KhoaVien model)
         {
-            // Kiểm tra tính hợp lệ của dữ liệu nhập
-            if (!ModelState.IsValid)
-            {
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine(error.ErrorMessage);
-                }
-                return View(model);
-            }
+            if (!ModelState.IsValid) return View(model);
 
-            // ⚠️ Đảm bảo dùng đúng DbSet tên là KhoaViens (giống trong DataContext)
             if (await _context.KhoaViens.AnyAsync(k => k.TenKhoaVien == model.TenKhoaVien))
             {
                 ModelState.AddModelError("", "Tên khoa viện đã tồn tại.");
                 return View(model);
             }
 
-            // Thêm mới vào database
             _context.KhoaViens.Add(model);
             await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-            // Quay lại danh sách
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var kv = await _context.KhoaViens.FirstOrDefaultAsync(k => k.MaKhoaVien == id);
+            if (kv == null) return NotFound();
+            return View(kv);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, KhoaVien model)
+        {
+            if (id != model.MaKhoaVien) return NotFound();
+            if (!ModelState.IsValid) return View(model);
+
+            try
+            {
+                _context.Update(model);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                ModelState.AddModelError("", "Có lỗi khi cập nhật dữ liệu.");
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var kv = await _context.KhoaViens.FindAsync(id);
+            if (kv == null) return NotFound();
+
+            _context.KhoaViens.Remove(kv);
+            await _context.SaveChangesAsync();
+            TempData["Success"] = "Xóa khoa viện thành công.";
             return RedirectToAction(nameof(Index));
         }
     }
